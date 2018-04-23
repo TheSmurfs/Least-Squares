@@ -56,13 +56,9 @@ with open("slr_data.csv", "r") as csvfile:#从文件中获取数据
             continue
         listx.append(eval(line[0]))
         listy.append(eval(line[1]))
-print(listx)
-print(listy)
 
 plt.grid(True)#是否打开网格
-# generate 20 points in 0~5500 randomly
-x = np.linspace(0, 8000, 10)#线性回归方程线
-plt.clf()#点重叠
+x = np.linspace(0, 8000)#线性回归方程线
 
 #等式计算
 A = get_a(listx)
